@@ -1,0 +1,16 @@
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+
+img {
+    width: 280px;
+    height: 216px;
+    justify-content: center;
+}
+
+img :hover {
+    width: 1.1;
+}

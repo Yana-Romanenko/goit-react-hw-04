@@ -1,0 +1,50 @@
+.header {
+    width: 100%;
+    background-color: rgb(27, 27, 128);
+    height: 34px;
+    padding: 4px auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .searchBar {
+    margin: 4px auto;
+    background-color: white;
+    width: 280px;
+    height: 28px;
+    border-radius: 4px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .btn {
+    background-color: white;
+    outline: none;
+    border: none;
+    color: black;
+  }
+  
+  .btn :focus,
+  :hover,
+  :active {
+    outline: none;
+    border: none;
+  }
+  
+  .input {
+    border-color: white;
+    height: 100%;
+    font-size: 18px;
+    width: 100%;
+    margin-left: 4px;
+    border: none;
+  }
+  
+  .input :focus,
+  :hover,
+  :active {
+    outline: none;
+    border-color: white;
+    border: none;
+  }
