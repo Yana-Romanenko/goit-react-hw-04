@@ -9,9 +9,10 @@ axios.defaults.params = {
     orientation: 'landscape',
 };
 
-const fetchPhotos = async (params = {}) => {
+export const fetchPhotos = async (params = {}) => {
 const { data } = await axios.get('/search/photos', {
     params,
 });
 return data;
 }
+

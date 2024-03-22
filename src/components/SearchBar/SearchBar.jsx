@@ -26,8 +26,8 @@ return (
   <input className={css.input}
       type="text"
       name='searchQuery'
-      autocomplete="off"
-      autofocus
+      autoComplete="off"
+      autoFocus
       placeholder="Search images and photos"
     />
   </label>

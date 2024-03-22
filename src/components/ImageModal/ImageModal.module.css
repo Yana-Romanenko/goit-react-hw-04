@@ -1,0 +1,11 @@
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .modalImg {
+    width: 100%;
+    height: auto;
+  }
