@@ -5,7 +5,7 @@ import toast, { Toaster } from 'react-hot-toast';
 
 const SearchBar = ({ onSubmit }) => {
 const handleSubmit = (event) => {
-  event.preventDedault();
+  event.preventDefault();
   const searchQuery = event.target.elements.searchQuery.value;
 
   if (!searchQuery.trim()) {
