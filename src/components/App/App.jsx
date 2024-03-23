@@ -9,6 +9,7 @@ import LoadMoreBtn from '../LoadMoreBtn/LoadMoreBtn';
 
 
 
+
  const App = () => {
     const [query, setQuery] = useState('');
     const [photos, setPhotos] = useState([]);
@@ -43,7 +44,7 @@ import LoadMoreBtn from '../LoadMoreBtn/LoadMoreBtn';
       getPhotos();
     }, [query, page]);
   
-    const handleSearch = value => {
+    const handleSubmit = value => {
       if (value === query) return;
       setPhotos([]);
       setPage(1);
@@ -68,8 +69,8 @@ import LoadMoreBtn from '../LoadMoreBtn/LoadMoreBtn';
     };
   
     return (
-      <div>
-        <SearchBar onSubmit={handleSearch} />
+      <>
+        <SearchBar onSubmit={handleSubmit} />
         {isError && <ErrorMessage message={'Oops! Error! Reload page!'} />}
         {photos.length !== 0 && (
           <ImageGallery photos={photos} openModal={openModal} />
@@ -88,7 +89,7 @@ import LoadMoreBtn from '../LoadMoreBtn/LoadMoreBtn';
           modal={selectedPhoto}
           closeModal={closeModal}
         />
-      </div>
+      </>
     );
   }
 

@@ -5,7 +5,7 @@ const API_KEY = '6jkUySb4hk37NqrGHs3ZdYb5XHJkSSY8DvtuotnSELo';
 axios.defaults.baseURL = 'https://api.unsplash.com';
 axios.defaults.params = {
     client_id: API_KEY,
-    per_page: 12,
+    per_page: 20,
     orientation: 'landscape',
 };
 

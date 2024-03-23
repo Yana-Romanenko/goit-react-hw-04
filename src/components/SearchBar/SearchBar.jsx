@@ -17,12 +17,10 @@ const handleSubmit = (event) => {
 
 return (
 <header className={css.header}>
-  <form onSubmit={handleSubmit} className={css.form}>
-<div className={css.searchBar}>
+  <form onSubmit={handleSubmit} className={css.searchBar}>
   <button type='submit' className={css.btn}>
   <IoSearch />
   </button>
-  <label>
   <input className={css.input}
       type="text"
       name='searchQuery'
@@ -30,8 +28,6 @@ return (
       autoFocus
       placeholder="Search images and photos"
     />
-  </label>
-</div>
     <Toaster position="top-center" />
   </form>
 </header>
